@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+  }
+}
+
+.header {
+  display: flex;
+
+  .logo > a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar-link {
+    list-style: none;
+
+    li {
+      display: inline;
+      padding-left: 1em;
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
