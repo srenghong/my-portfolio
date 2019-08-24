@@ -1,7 +1,8 @@
-import React from "react"
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ children, className }) => (
   <div className="container">
@@ -9,6 +10,11 @@ const Layout = ({ children, className }) => (
     <main className={className}>{children}</main>
     <Footer />
   </div>
-)
+);
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+  className: PropTypes.element.isRequired,
+};
+
+export default Layout;

@@ -1,12 +1,12 @@
-import React from "react"
-import "./index.scss"
+import React from 'react';
+import './index.scss';
 
-import Layout from "../components/Layout"
+import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout>
-    <p>Hello, I'm Sreng. A front-end developer!!</p>
+    <p>Hello, I am m Sreng. A front-end developer!!</p>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

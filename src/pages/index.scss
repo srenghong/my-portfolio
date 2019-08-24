@@ -5,6 +5,8 @@ body {
 }
 
 .container {
+  width: 80vw;
+  margin: auto;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -16,8 +18,9 @@ body {
 
 .header {
   display: flex;
+  justify-content: space-between;
 
-  .logo > a {
+  .logo {
     color: black;
     text-decoration: none;
   }
