@@ -6,7 +6,7 @@ const Header = () => (
     <div>
       <p>
         <Link to="/" className="logo">
-          Sreng.H
+          |S_H|
         </Link>
       </p>
     </div>
