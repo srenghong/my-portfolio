@@ -45,6 +45,7 @@ const AboutPage = () => (
           <li>ES6</li>
           <li>React</li>
           <li>Node.js</li>
+          <li>Express</li>
           <li>Typescript</li>
           <li>Gatsby.js</li>
         </ul>
@@ -55,7 +56,7 @@ const AboutPage = () => (
           <li>Docker</li>
           <li>Java</li>
           <li>Laravel</li>
-          <li>Php</li>
+          <li>PHP</li>
           <li>MySQL</li>
         </ul>
       </div>
@@ -66,6 +67,7 @@ const AboutPage = () => (
           <li>Gatsby</li>
           <li>GraphQL</li>
           <li>Flutter</li>
+          <li>PWA</li>
           <li>and many more</li>
         </ul>
       </div>

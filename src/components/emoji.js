@@ -14,7 +14,7 @@ const emoji = {
 };
 
 const Emoji = ({ name }) => (
-  <span role="img" aria-label={name} title={name}>
+  <span role="img" aria-label={name} title={name} className={name}>
     {emoji[name]}
   </span>
 );

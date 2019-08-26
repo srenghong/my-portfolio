@@ -4,10 +4,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
+  color: #364f6b;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
-  background-color: aliceblue;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -25,9 +25,14 @@ body {
     width: 60vw;
   }
 
-  .home {
+  .home,
+  .about,
+  .work,
+  .contact {
     flex: 1;
+  }
 
+  .home {
     #hello {
       font-family: 'Qwigley', cursive;
       font-size: 4em;
@@ -46,16 +51,49 @@ body {
     #sayHello {
       padding-top: 20px;
       a {
-        border: 1px solid cornflowerblue;
+        border: 1px solid #fc5185;
         padding: 8px 12px;
         border-radius: 20px;
         text-decoration: none;
-        color: cornflowerblue;
+        color: #fc5185;
         font-size: 1.2em;
         font-weight: 300;
 
         &:hover {
-          opacity: 0.75;
+          color: #3fc1c9;
+          border: 1px solid #3fc1c9;
+        }
+
+        span.hello {
+          animation-name: wave-animation;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+          transform-origin: 70% 70%;
+          display: inline-block;
+        }
+
+        @keyframes wave-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(-10deg);
+          }
+          20% {
+            transform: rotate(12deg);
+          }
+          30% {
+            transform: rotate(-10deg);
+          }
+          40% {
+            transform: rotate(9deg);
+          }
+          50% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
         }
       }
     }
@@ -106,7 +144,7 @@ body {
   justify-content: space-between;
 
   .logo {
-    color: black;
+    color: #fc5185;
     text-decoration: none;
     font-size: 1.2em;
   }
@@ -119,8 +157,12 @@ body {
       padding-left: 1.5em;
 
       a {
-        color: black;
+        color: #364f6b;
         text-decoration: none;
+      }
+
+      a:hover {
+        color: #3fc1c9;
       }
     }
   }
@@ -129,4 +171,8 @@ body {
 footer {
   margin: 60px 0 20px 0;
   height: 80px;
+
+  #me {
+    color: #fc5185;
+  }
 }
