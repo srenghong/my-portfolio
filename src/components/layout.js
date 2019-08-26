@@ -7,16 +7,14 @@ import Footer from './footer';
 const Layout = ({ children, className }) => (
   <div className="container">
     <Header />
-    <main className={className}>
-      <div>{children}</div>
-    </main>
+    <main className={className}>{children}</main>
     <Footer />
   </div>
 );
 
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
-  className: PropTypes.element.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default Layout;

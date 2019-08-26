@@ -15,26 +15,32 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: calc(100vh - 100px);
 
-  main {
+  @media (min-height: 813px) {
+    min-height: 100vh;
+  }
+
+  @media (min-width: 768px) {
+    width: 60vw;
+  }
+
+  .home {
     flex: 1;
 
-    #bio {
-      p {
-        font-size: 1.5em;
-      }
+    #hello {
+      font-family: 'Qwigley', cursive;
+      font-size: 4em;
+      margin: 0.8em 0 0 0;
+    }
 
-      #hello {
-        font-family: 'Qwigley', cursive;
-        font-size: 4em;
-        margin: 0.8em 0 0 0;
-      }
+    #bio {
+      font-size: 2em;
     }
 
     #objective {
       font-weight: 300;
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
 
     #sayHello {
@@ -45,11 +51,49 @@ body {
         border-radius: 20px;
         text-decoration: none;
         color: cornflowerblue;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 300;
 
         &:hover {
-          text-decoration: underline;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  .about {
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    p.head {
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      div {
+        width: 150px;
+
+        p.sub-head {
+          font-size: 1.2em;
+          font-weight: 400;
+        }
+
+        ul {
+          padding: 0;
+        }
+
+        li {
+          font-size: 1.1em;
+          font-weight: 300;
+          list-style: none;
         }
       }
     }
@@ -57,7 +101,7 @@ body {
 }
 
 .header {
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
 
@@ -83,5 +127,6 @@ body {
 }
 
 footer {
-  margin: 20px 0;
+  margin: 60px 0 20px 0;
+  height: 80px;
 }
