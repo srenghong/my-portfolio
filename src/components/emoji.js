@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const emoji = {
-  hello: '👋',
+  wave: '👋',
   graduation: '👨‍🎓',
   france: '🇫🇷',
   working: '👨‍💻',

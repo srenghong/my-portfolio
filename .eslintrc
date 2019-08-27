@@ -13,6 +13,7 @@
     "comma-dangle": "off",
     "indent": "off",
     "no-trailing-spaces": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "quotes": "off"
   }
 }

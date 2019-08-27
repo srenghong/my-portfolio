@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
-const Header = () => (
+const Header = ({ page }) => (
   <header className="header">
     <div>
       <p>
@@ -13,16 +14,27 @@ const Header = () => (
     <nav>
       <ul className="navbar-link">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" className={page === 'about' ? 'active' : ''}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/work">Work</Link>
+          <Link to="/work" className={page === 'work' ? 'active' : ''}>
+            Work
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className={page === 'contact' ? 'active' : ''}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
   </header>
 );
+
+Header.propTypes = {
+  page: PropTypes.string.isRequired,
+};
+
 export default Header;
