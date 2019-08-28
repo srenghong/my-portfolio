@@ -1,8 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import Emoji from '../components/emoji';
 import coverPhoto from '../images/cover-photo.png';
+
+const MySchool = styled.span`
+  color: #364f6b;
+  text-decoration: none;
+
+  :hover {
+    color: #009fe3;
+  }
+`;
 
 const AboutPage = () => (
   <Layout className="about">
@@ -12,24 +22,32 @@ const AboutPage = () => (
       </div>
       <div className="story">
         <p className="head">
-          Hey there, I&apos;m Sreng. Currenlty living and working in Nice,
+          Hey there, this is Sreng. Currenlty living and working in Nice,
           France.
         </p>
         <p>
-          After my <Emoji name="graduation" /> from Polytech Lille, I have
-          started working as a front-end developer at one software company.
+          After my <Emoji name="graduation" /> from{' '}
+          <MySchool
+            as="a"
+            href="http://www.polytech-lille.fr"
+            alt="Polytech Lille"
+          >
+            Polytech Lille
+          </MySchool>
+          , I have been working as a front-end developer at one software
+          company.
         </p>
         <p>
           I love <Emoji name="working" /> with JavaScript since there are many
-          choices to choose regarding front/back-end technologies. However, I am
+          options to choose regarding front/back-end technologies. However, I am
           always curious to learn something new. For instance, lately I have
           been learning Flutter by Google.
         </p>
         <p>
           For my free time, I like to collaborate with my friends to create an{' '}
           <Emoji name="web" />/<Emoji name="mobile" /> application which can
-          improve Cambodia&apos;s society, apart from that I am interested in{' '}
-          <Emoji name="sport" />, <Emoji name="music" /> and{' '}
+          help and improve Cambodia&apos;s society, apart from that I am
+          interested in <Emoji name="sport" />, <Emoji name="music" /> and{' '}
           <Emoji name="game" />.
         </p>
       </div>
@@ -57,13 +75,13 @@ const AboutPage = () => (
           </ul>
         </div>
         <div>
-          <p className="sub-head">Server-side</p>
+          <p className="sub-head">Others</p>
           <ul>
             <li>Docker</li>
             <li>Java</li>
-            <li>Laravel</li>
             <li>PHP</li>
             <li>MySQL</li>
+            <li>Git</li>
           </ul>
         </div>
         <div>

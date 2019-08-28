@@ -17,8 +17,10 @@ const IndexPage = () => (
       </div>
       <div id="objective">
         <p>
-          I am a passionate looking to make an impact in this world. I build
-          website and web application, and I love what I do.
+          I am passionate about web development and looking to make an impact in
+          this world. I build beautiful, functional and user-friendly website
+          and web application. I believe &quot;The only way to do great work is
+          to love what you do.&quot; by Steve Jobs.
         </p>
       </div>
       <div id="sayHello">
