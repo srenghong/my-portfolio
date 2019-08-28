@@ -1,0 +1,20 @@
+module.exports = {
+  pathPrefix: '/',
+  title: 'Sreng Hong | Web Developer',
+  titleAlt: 'Sreng Hong | Web Developer srenghong.com',
+  description:
+    'A minimal portfiolio website with Gatsby and deployed with Netlify.',
+  headline: 'Creating and developing software',
+  url: 'https://srenghong.com',
+  siteLanguage: 'en',
+  logo: '/logos/logo.png',
+  ogLanguage: 'en_US',
+  favicon: 'static/favicon.ico',
+  shortName: 'Sreng',
+  author: 'Sreng Hong',
+  themeColor: '#364f6b',
+  backgroundColor: '#f5f5f5',
+  twitter: '@srenghong21',
+  facebook: 'Sreng Hong',
+  googleAnalyticsID: 'UA-146593697-1',
+};

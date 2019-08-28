@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 const WorkPage = () => (
   <Layout className="work">
-    <p>Work</p>
+    <p>Work in progress</p>
   </Layout>
 );
 
