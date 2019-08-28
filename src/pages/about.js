@@ -2,10 +2,14 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Emoji from '../components/emoji';
+import coverPhoto from '../images/cover-photo.png';
 
 const AboutPage = () => (
   <Layout className="about">
     <>
+      <div>
+        <img src={coverPhoto} alt="Cover" />
+      </div>
       <div className="story">
         <p className="head">
           Hey there, I&apos;m Sreng. Currenlty living and working in Nice,

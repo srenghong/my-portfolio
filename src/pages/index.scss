@@ -135,6 +135,12 @@ body {
   }
 
   .about {
+    img {
+      min-width: 100%;
+      max-width: 100%;
+      width: 100px;
+    }
+
     p {
       font-size: 1.2em;
       font-weight: $font-weight-light;
