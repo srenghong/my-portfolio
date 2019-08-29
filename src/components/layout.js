@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/global.scss';
 
 import Header from './header';
 import Footer from './footer';
