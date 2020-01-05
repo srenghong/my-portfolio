@@ -10,7 +10,7 @@ const IndexPage = () => (
       <p id="hello">Hello,</p>
       <div id="bio">
         <p>
-          I am Sreng, a web developer, from Phnom Penh, Cambodia. Nice to meet
+          I am Sreng, a software developer, from Phnom Penh, Cambodia. Nice to meet
           you!
         </p>
       </div>

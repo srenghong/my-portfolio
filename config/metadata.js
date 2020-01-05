@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: '/',
-  title: 'Sreng Hong | Web Developer',
-  titleAlt: 'Sreng Hong | Web Developer srenghong.com',
+  title: 'Sreng Hong | Software Developer',
+  titleAlt: 'Sreng Hong',
   description:
-    'A minimal portfiolio website with Gatsby and deployed with Netlify.',
-  headline: 'Creating and developing software',
+    'Hi, I am Sreng, a software developer, from Phnom Penh, Cambodia.',
+  headline: 'A minimal portfiolio website with Gatsby and deployed with Netlify.',
   url: 'https://srenghong.com',
   siteLanguage: 'en',
   logo: '/logos/logo.png',
